@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #48353a;
+  box-shadow: 0 3px 5px #ccc;
+}
+header img {
+  float: left;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+header nav {
+  display: block;
+  float: right;
+  margin-top: 3px;
+}
+header nav a {
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #48353a;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+header nav a:hover {
+  border-bottom: 2px solid #48353a;
+}
+.hero {
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  padding: 250px 0 200px 0;
+  height: 100vh;
+  background-position: center;
+}
+.hero .hero-heading {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.hero-heading h2 {
+  font-family: "Acme", sans-serif;
+  font-size: 64px;
+  margin: 0 auto 20px auto;
+  font-weight: 400;
+}
+.hero-heading p {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flowers {
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+.flowers img {
+  float: left;
+  width: 33.333%;
+}
+.qoutes {
+  overflow: hidden;
+  text-align: center;
+}
+.qoutes div {
+  float: left;
+  width: 50%;
+  padding: 40px 120px;
+}
+.qoutes div img {
+  width: 75px;
+  border-radius: 50%;
+}
+.qoutes div blockquote {
+  font-size: 24px;
+  font-family: "Acme", sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 400px;
+  margin: 15px auto 5px auto;
+}
+.qoutes div:first-child {
+  background-color: #f7f1ee;
+}
+.qoutes div:last-child {
+  background-color: #ffffff;
+}
+.chair {
+  background-image: url(../images/full-bleed.jpg);
+}
+
+.logos {
+  background-color: #eeae9f;
+  padding: 40px 0;
+  text-align: center;
+}
+.logos h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.logos img {
+  margin: 0 20px;
+}
+
+footer {
+  overflow: hidden;
+  padding: 20px;
+  background-color: #48353a;
+  color: #ccc9ca;
+}
+footer img {
+  float: left;
+}
+footer p {
+  float: right;
+}
+@media (max-width: 767px) {
+  .hero-heading h2 {
+    font-size: 56px;
+  }
+  .qoutes div {
+    float: none;
+    width: auto;
+    padding: 40px 40px;
+  }
+  .qoutes div blockquote {
+    font-size: 24px;
+  }
+  .qoutes div p {
+    display: none;
+  }
+  .flowers img {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (max-width: 439px) {
+  header nav,
+  header img {
+    float: none;
+  }
+  header nav a {
+    margin-left: 0;
+    margin-right: 12px;
+  }
+  .logos img {
+    display: block;
+    margin: 0 auto 35px auto;
+  }
+  .logos img:last-child {
+    margin-bottom: 5px;
+  }
+}
